@@ -1,0 +1,24 @@
+{
+  "name": "rock-scissors-paper-app",
+  "version": "1.0.0",
+  "description": "Rock Scissors Paper Backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine",
+    "start": "node src/index.js",
+    "dev": "nodemon -r dotenv/config src/index.js"
+  },
+  "keywords": [
+    "menu",
+    "food"
+  ],
+  "author": "Diego Motta",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.1",
+    "mongoose": "^6.3.5"
+  }
+}
