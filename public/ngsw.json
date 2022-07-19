@@ -1,0 +1,121 @@
+{
+  "configVersion": 1,
+  "timestamp": 1658245263137,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/683.25177b2e36818897.js",
+        "/885.558d7008c7306f90.js",
+        "/965.53df547752a9d15d.js",
+        "/favicon.ico",
+        "/index.html",
+        "/main.9d1ab1adc083886b.js",
+        "/manifest.webmanifest",
+        "/polyfills.1e9bff54a6503bba.js",
+        "/runtime.d282280775f7a103.js",
+        "/styles.5a8a8d41bc9fee76.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/BentonSansBBVA-Bold.0618d2671f37977a.otf",
+        "/BentonSansBBVA-Book.2ff1e483ed0b14d9.otf",
+        "/BentonSansBBVA-BookItalic.42c502e4867f2df4.otf",
+        "/BentonSansBBVA-Light.8601a987964603ea.otf",
+        "/BentonSansBBVA-Medium.243e349ad61844df.otf",
+        "/BentonSansBBVA-MediumItalic.1f55603ca55fc207.otf",
+        "/assets/fonts/BentonSansBBVA-Bold.otf",
+        "/assets/fonts/BentonSansBBVA-Book.otf",
+        "/assets/fonts/BentonSansBBVA-BookItalic.otf",
+        "/assets/fonts/BentonSansBBVA-Light.otf",
+        "/assets/fonts/BentonSansBBVA-Medium.otf",
+        "/assets/fonts/BentonSansBBVA-MediumItalic.otf",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/img/rsp-lizard.svg",
+        "/assets/img/rsp-paper.svg",
+        "/assets/img/rsp-rock.svg",
+        "/assets/img/rsp-scissors.svg",
+        "/assets/img/rsp-spock.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/683.25177b2e36818897.js": "183e752c4d2e855939095e2850c44a67c34f7abf",
+    "/885.558d7008c7306f90.js": "48c8f4a234a66d460dec8d5f9517c254a35b8253",
+    "/965.53df547752a9d15d.js": "eab1d4e1e1d7430239e325b13ced7442e5081c19",
+    "/BentonSansBBVA-Bold.0618d2671f37977a.otf": "332a183a2157553909103997b747266b94510804",
+    "/BentonSansBBVA-Book.2ff1e483ed0b14d9.otf": "f6280deb0192a51cf2184fc83aee970f0d78b623",
+    "/BentonSansBBVA-BookItalic.42c502e4867f2df4.otf": "9d4f2c3ec7b95c2756624a33a98c82d163d447cb",
+    "/BentonSansBBVA-Light.8601a987964603ea.otf": "a16935c28519cbe592975b9476f6902e9c7535b5",
+    "/BentonSansBBVA-Medium.243e349ad61844df.otf": "32f0fb8ba6e8627ff45b8f6b4d498140a461884c",
+    "/BentonSansBBVA-MediumItalic.1f55603ca55fc207.otf": "7f10c34a779b271b6e9d34de88ee52ce142f33e2",
+    "/assets/fonts/BentonSansBBVA-Bold.otf": "332a183a2157553909103997b747266b94510804",
+    "/assets/fonts/BentonSansBBVA-Book.otf": "f6280deb0192a51cf2184fc83aee970f0d78b623",
+    "/assets/fonts/BentonSansBBVA-BookItalic.otf": "9d4f2c3ec7b95c2756624a33a98c82d163d447cb",
+    "/assets/fonts/BentonSansBBVA-Light.otf": "a16935c28519cbe592975b9476f6902e9c7535b5",
+    "/assets/fonts/BentonSansBBVA-Medium.otf": "32f0fb8ba6e8627ff45b8f6b4d498140a461884c",
+    "/assets/fonts/BentonSansBBVA-MediumItalic.otf": "7f10c34a779b271b6e9d34de88ee52ce142f33e2",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/img/rsp-lizard.svg": "8bbb3e2b751d08bf4e0619764fa506549802202b",
+    "/assets/img/rsp-paper.svg": "eba30e83545b4f4ee990a46a54809e3623e383c2",
+    "/assets/img/rsp-rock.svg": "b3178c91de9786890368e1cb8c130f53ef77daa7",
+    "/assets/img/rsp-scissors.svg": "4d696f664146b9ccb7a88d1aebca797d1871da60",
+    "/assets/img/rsp-spock.svg": "bb47f2ce7d043c521f579ceeb369ffadab9d6ab3",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "d909faf1fd052cf4ba83222afb305370da63a616",
+    "/main.9d1ab1adc083886b.js": "2fdb349abe582307c02a46636b3fcdb993dfd689",
+    "/manifest.webmanifest": "ca806f57438f7f5cdf36312f2ab1959f9e080475",
+    "/polyfills.1e9bff54a6503bba.js": "d631fd9e998661023bfd3c64c46d23b253ece2e8",
+    "/runtime.d282280775f7a103.js": "18822123d12c72567fb5ac2e795e4a3893f3d89f",
+    "/styles.5a8a8d41bc9fee76.css": "278187151e484ff5622e67bfa0a471f79893182d"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
