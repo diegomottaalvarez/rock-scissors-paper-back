@@ -70,6 +70,20 @@ async function playRound(req, res) {
   }
 }
 
+async function getRanking(req, res = response) {
+  try {
+    const { amount } = req.params;
+
+    const ranking = await RSPGame.find().sort({ userWins: -1 }).limit(amount);
+    res.status(201).json(ranking);
+  } catch (error) {
+    console.log(err);
+    res.status(500).json({
+      message: err.message,
+    });
+  }
+}
+
 const playRSP = (userPlay, computerPlay) => {
   if (userPlay === computerPlay) {
     return RSPGAME_RESULT_OPTIONS.TIE;
@@ -88,20 +102,10 @@ const getRandomItemWithException = (lastItem) => {
   return possibleValues[randomIndex];
 };
 
-// async function postMessage(req, res) {
-//   try {
-//     const messageToCreate = {
-//       message: req.body.message,
-//       time: new Date().toISOString(),
-//     };
-//     const message = await Message.create(messageToCreate, { returning: true });
-//     res.json(message);
-//   } catch (err) {
-//     console.log(err);
-//     res.status(500).json({
-//       message: err.message,
-//     });
-//   }
-// }
-
-module.exports = { playRound, createGame };
+module.exports = {
+  playRound,
+  createGame,
+  getRanking,
+  getRandomItemWithException,
+  playRSP,
+};
