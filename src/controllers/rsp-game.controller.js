@@ -21,31 +21,14 @@ async function createGame(req, res) {
   } catch (error) {}
 }
 
-async function playRound(req, res) {
+async function save(req, res) {
   try {
-    const { username, userPlay } = req.body;
+    const { game } = req.body;
+    const { username } = game;
 
     const currentGame = await RSPGame.findOne({
       username,
     });
-
-    const game = currentGame || {
-      username,
-      lastPlayComputer: null,
-      lastPlayUser: null,
-      userWins: 0,
-      computerWins: 0,
-    };
-
-    const computerPlay = getRandomItemWithException(game?.lastPlayComputer);
-    const result = playRSP(userPlay, computerPlay);
-    game.lastPlayUser = userPlay;
-    game.lastPlayComputer = computerPlay;
-    if (result === RSPGAME_RESULT_OPTIONS.USER_WIN) {
-      game.userWins++;
-    } else if (result === RSPGAME_RESULT_OPTIONS.COMPUTER_WIN) {
-      game.computerWins++;
-    }
     let newRound;
     if (!currentGame) {
       console.log('newGame', game);
@@ -61,7 +44,7 @@ async function playRound(req, res) {
       );
     }
 
-    res.status(201).json({ game: newRound, result });
+    res.status(201).json({ game: newRound });
   } catch (err) {
     console.log(err);
     res.status(500).json({
@@ -84,28 +67,8 @@ async function getRanking(req, res = response) {
   }
 }
 
-const playRSP = (userPlay, computerPlay) => {
-  if (userPlay === computerPlay) {
-    return RSPGAME_RESULT_OPTIONS.TIE;
-  } else if (RSPGAME_WINS.get(userPlay) === computerPlay) {
-    return RSPGAME_RESULT_OPTIONS.USER_WIN;
-  } else {
-    return RSPGAME_RESULT_OPTIONS.COMPUTER_WIN;
-  }
-};
-
-const getRandomItemWithException = (lastItem) => {
-  const possibleValues = Object.values(RSPGAME_VALUES).filter(
-    (item) => item != lastItem
-  );
-  const randomIndex = Math.floor(Math.random() * possibleValues.length);
-  return possibleValues[randomIndex];
-};
-
 module.exports = {
-  playRound,
+  save,
   createGame,
   getRanking,
-  getRandomItemWithException,
-  playRSP,
 };

@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const {
-  playRound,
+  save,
   createGame,
   getRanking,
 } = require('../controllers/rsp-game.controller');
@@ -8,7 +8,7 @@ const {
 const gameRoutes = Router({ mergeParams: true });
 
 gameRoutes.post('/', createGame);
-gameRoutes.post('/playRound', playRound);
+gameRoutes.post('/save', save);
 gameRoutes.get('/ranking', getRanking);
 
 module.exports = { gameRoutes };
