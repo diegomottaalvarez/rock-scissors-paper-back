@@ -56,13 +56,12 @@ async function save(req, res) {
 async function getRanking(req, res = response) {
   try {
     const { amount } = req.params;
-
-    const ranking = await RSPGame.find().sort({ userWins: -1 }).limit(amount);
+    const ranking = await RSPGame.find().limit(amount).sort({ userWins: -1 });
     res.status(201).json(ranking);
   } catch (error) {
-    console.log(err);
+    console.log(error);
     res.status(500).json({
-      message: err.message,
+      message: error.message,
     });
   }
 }

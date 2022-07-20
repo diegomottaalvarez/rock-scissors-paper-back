@@ -9,6 +9,6 @@ const gameRoutes = Router({ mergeParams: true });
 
 gameRoutes.post('/', createGame);
 gameRoutes.post('/save', save);
-gameRoutes.get('/ranking', getRanking);
+gameRoutes.get('/ranking/:amount', getRanking);
 
 module.exports = { gameRoutes };
