@@ -1,6 +1,6 @@
 # rock-scissors-paper-back
 
-Backend for Rock Scissors Paper Lizzard Spock game PWA in Node.js
+Backend for Rock Scissors Paper Lizard Spock game PWA in Node.js
 
 Para desplegar el back de la aplicación en local:
 
