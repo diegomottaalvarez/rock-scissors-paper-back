@@ -1,10 +1,5 @@
 const response = require('express');
 const RSPGame = require('../models/RSPGame.model');
-const {
-  RSPGAME_VALUES,
-  RSPGAME_WINS,
-  RSPGAME_RESULT_OPTIONS,
-} = require('../models/RSPGame.utils');
 
 async function createGame(req, res) {
   try {
